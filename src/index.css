@@ -1,13 +1,102 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400;600&display=swap');
+
+* {
+  font-family: 'Gluten', cursive;
+  font-size: 23px;
+  color: #111;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  font-family: 600;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff979;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+nav {
+  background-color: #ffe91c;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+nav span {
+  padding: 0 30px;
+}
+
+form {
+  margin: 30px auto;
+  display: flex;
+}
+
+form input[type='text'] {
+  padding: 15px 30px;
+  flex: 6;
+  border: 0;
+  outline: 0;
+  border-radius: 10px 0 0 10px;
+  background-color: #fff;
+}
+
+form input[type='submit'] {
+  padding: 15px 30px;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  border-radius: 0 10px 10px 0;
+  background-color: #ffe91c;
+}
+
+form input[type='submit']:hover {
+  background-color: #111;
+  color: #ffe91c;
+}
+
+.todo {
+  background-color: #feffd1;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.todo:hover {
+  background-color: #ffe91c;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.about {
+  margin: 30px auto;
+  background-color: #feffd1;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
+
+.about h1 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.about p {
+  line-height: 1.7rem;
 }
