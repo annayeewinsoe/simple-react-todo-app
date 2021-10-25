@@ -75,6 +75,8 @@ form input[type='submit']:hover {
   justify-content: space-between;
   margin-top: 10px;
   border-radius: 10px;
+  width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .todo:hover {
@@ -99,4 +101,23 @@ form input[type='submit']:hover {
 
 .about p {
   line-height: 1.7rem;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    max-width: none;
+    margin: 0;
+    border-radius: 0px;
+    min-height: 100vh;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form input[type='text'],
+  form input[type='submit'] {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
 }
